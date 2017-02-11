@@ -7,10 +7,10 @@ import NativeModule exposing (helloWorld)
 
 all : Test
 all =
-    describe "Sample Test Suite"
-        [ describe "Unit test examples"
-            [ test "helloWorld" <|
+    describe "Native module test suite"
+        [ describe "helloWorld"
+            [ test "empty string" <|
                 \() ->
-                    Expect.equal (helloWorld "Gabi") "Hello Gabi!"
+                    Expect.equal (helloWorld "") "Hello !"
             ]
         ]
