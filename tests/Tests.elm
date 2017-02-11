@@ -12,5 +12,8 @@ all =
             [ test "empty string" <|
                 \() ->
                     Expect.equal (helloWorld "") "Hello !"
+            , test "name" <|
+                \() ->
+                    Expect.equal (helloWorld "Gabi") "Hello Gabi!"
             ]
         ]

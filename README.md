@@ -1,19 +1,18 @@
 # Elm native module
-[WIP] This tutorial still work in progress!!
-
 
 ## What?
 
 This is an example of how to do elm native modules for elm 0.18. It
-contains a native module with a `helloWorld` function which recives a
-name parameter and returns a string with that name appended to the 'Hello ' string.
+contains a native module with a `helloWorld` function which receives a
+name parameter and returns a string with that name appended to the 'Hello ' string
+and an exclamation at the end.
 
 ## Why?
 
 There are not too many tutorials about how native modules. One of them
 is the wiki of
 [take-home](https://github.com/eeue56/take-home/wiki/Writing-your-first-Elm-Native-module) but it is not updated for elm 0.17 and up.
-Also, I have included a test, so you can test your own native modules.
+Also, I have included some tests, so you can learn how to test your own native modules.
 
 ## How?
 
@@ -145,4 +144,14 @@ helloWorld =
     Native.NativeModule.helloWorld
 ```
 
-Finally, we can run our first test again, and it should pass.
+Finally, we can run our first test again and it should pass.
+
+Now we can write a new test to check that every thing works as we were expecting.
+
+```elm
+, test "name" <|
+    \() ->
+        Expect.equal (helloWorld "Gabi") "Hello Gabi!"
+```
+
+If everything is ok, it also should pass that test.
