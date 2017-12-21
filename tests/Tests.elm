@@ -23,5 +23,8 @@ all =
             , test "sum two numbers" <|
                 \() ->
                     Expect.equal (sum 2 3) 5
+            , test "sum partial application" <|
+                \() ->
+                    Expect.equal ((sum 2) <| 3) 5
             ]
         ]

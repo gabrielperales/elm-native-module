@@ -155,3 +155,23 @@ Now we can write a new test to check that every thing works as we were expecting
 ```
 
 If everything is ok, it also should pass that test.
+
+For functions of more than one argument, you can wrap the function with `FN`,
+where `N` is the number of arguments. This turns the function into one that can
+be called using Elm conventions, while still being written as a normal
+Javascript function. For example:
+
+
+```javascript
+var _gabrielperales$elm_native_module$Native_NativeModule = function(){
+  function sum(one, two){
+    return one + two;
+  }
+
+  return {
+    sum: F2(sum)
+  };
+}();
+```
+
+The functions `F2`, `F3`... F9 are provided by Elm.

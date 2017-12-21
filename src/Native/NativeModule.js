@@ -3,14 +3,12 @@ var _gabrielperales$elm_native_module$Native_NativeModule = (function() {
     return 'Hello ' + name + '!';
   }
 
-  function sum(one) {
-    return function(two) {
-      return one + two;
-    };
-  }
+  function sum(one, two) {
+    return one + two;
+  };
 
   return {
     helloWorld: helloWorld,
-    sum: sum,
+    sum: F2(sum),
   };
 })();
