@@ -122,6 +122,17 @@ var _gabrielperales$elm_native_module$Native_NativeModule = function(){
 }();
 ```
 
+You will also need to modify your ``elm-package.json`` file to include the
+directive:
+
+```json
+{
+    ...
+    "native-modules": true,
+    ...
+}
+```
+
 The last thing we have to do is import that native module inside our elm
 module. You only have to type `import Native.NativeModule` under
 you module definition.
