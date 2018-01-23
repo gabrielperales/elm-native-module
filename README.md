@@ -73,7 +73,8 @@ the module `NativeModule` we are trying to import can't be found. That
 is right... we haven't done it yet!.
 
 Our next step will be create that module, so we have to create a file
-called `NativeModule.elm` inside the `src` folder.
+called `NativeModule.elm` inside the `src` folder. (You can replace 
+`NativeModule` with something more descriptive in your project).
 
 Inside it, we are going write the lines under this:
 
@@ -121,6 +122,9 @@ var _gabrielperales$elm_native_module$Native_NativeModule = function(){
   };
 }();
 ```
+(In your project, you can again rename `NativeModule.js` to something
+more appropriate, but the parent directory must be `Native` for it
+to be found, at least with current Elm).
 
 You will also need to modify your ``elm-package.json`` file to include the
 directive:
