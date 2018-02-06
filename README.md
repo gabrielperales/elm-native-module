@@ -1,5 +1,21 @@
 # Elm native module
 
+**This is highly discouraged, and will not be possible in future versions of Elm.**
+
+The core Elm libraries need access to JavaScript to expose HTTP in Elm (for example) but this is not a public API. It is not intended for public use. It can change dramatically from release to release. It is not permitted in published packages. And again, in future versions, it will not be accessible.
+
+In summary, it is better to figure out how to structure code such that ports will be a good option. If you cannot achieve what you want after asking around on Slack, the best path may be to circle back around to Elm later when more of the Web Platform is covered to your liking.
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+
 ## What?
 
 This is an example of how to do elm native modules for elm 0.18. It
